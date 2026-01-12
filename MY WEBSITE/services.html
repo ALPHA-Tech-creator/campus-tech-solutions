@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - CampusTech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CampusTech<span>Solutions</span></h1>
+                <p class="tagline">PC Software Repair • Professional CV Design</p>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html" class="active"><i class="fas fa-laptop-code"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a></li>
+                    <li><a href="contact.html"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                    <li>
+                        <button class="cart-toggle" onclick="showCart()">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Modern Services Hero -->
+    <section class="modern-services-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+
+    </section>
+
+    <!-- Service Categories -->
+    <section class="service-categories">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">
+                    <i class="fas fa-th"></i> All Services
+                </button>
+                <button class="category-tab" data-category="software">
+                    <i class="fas fa-laptop-code"></i> PC Software
+                </button>
+                <button class="category-tab" data-category="cv">
+                    <i class="fas fa-file-alt"></i> CV Services
+                </button>
+                <button class="category-tab" data-category="delivery">
+                    <i class="fas fa-truck"></i> Delivery
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Software Services -->
+    <section class="modern-services-section">
+        <div class="container">
+            <h2 class="modern-section-title">
+                <i class="fas fa-laptop-medical"></i>
+                <span>PC Software Repair Services</span>
+            </h2>
+            <p class="modern-section-subtitle">Expert solutions for Windows systems. Fast, reliable, and guaranteed.</p>
+            
+            <div class="modern-services-grid" id="servicesContainer">
+                <!-- Service 1 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="service-badge">
+                            <span class="badge-popular">Most Popular</span>
+                            <div class="price">N$200</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Microsoft Office Installation</h3>
+                    <p class="service-description">Office 365 with lifetime activation. No monthly payments, one-time setup.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Full Office suite installation</li>
+                        <li><i class="fas fa-check"></i> Permanent activation</li>
+                        <li><i class="fas fa-check"></i> Updates included</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Microsoft Office Installation', 200, 'Office 365 with lifetime activation')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(1)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-windows"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$200</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Windows 10 → 11 Upgrade</h3>
+                    <p class="service-description">Seamless upgrade with zero data loss. All files and apps preserved.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> No data loss guaranteed</li>
+                        <li><i class="fas fa-check"></i> Complete driver updates</li>
+                        <li><i class="fas fa-check"></i> Post-upgrade optimization</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Windows 10 to 11 Upgrade', 200, 'No data loss upgrade')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(2)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$150</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Windows Activation</h3>
+                    <p class="service-description">Full Windows personalization. Unlock all features and customization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Genuine product key</li>
+                        <li><i class="fas fa-check"></i> Wallpaper customization</li>
+                        <li><i class="fas fa-check"></i> Theme personalization</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Windows Activation', 150, 'Product key activation')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(3)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="service-badge">
+                            <span class="badge-popular">Fast Fix</span>
+                            <div class="price">From N$180</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">PC Optimization</h3>
+                    <p class="service-description">Fix freezing, lagging, and speed issues. Like-new performance.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Speed optimization</li>
+                        <li><i class="fas fa-check"></i> Malware removal</li>
+                        <li><i class="fas fa-check"></i> Essential apps setup</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Windows Optimization', 180, 'Speed fix and optimization')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(4)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-unlock-alt"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$250</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Password Recovery</h3>
+                    <p class="service-description">Remove forgotten login credentials without losing any data.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 100% data safe</li>
+                        <li><i class="fas fa-check"></i> PIN/Password reset</li>
+                        <li><i class="fas fa-check"></i> New login setup</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Password Recovery', 250, 'Remove forgotten login')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(5)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">From N$100</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Bitlocker Removal</h3>
+                    <p class="service-description">Remove encryption locks and recover access to your data.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Data recovery</li>
+                        <li><i class="fas fa-check"></i> Encryption removal</li>
+                        <li><i class="fas fa-check"></i> System restoration</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Bitlocker Removal', 100, 'Encryption removal')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(6)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 7 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">From N$150</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Bluescreen Fix</h3>
+                    <p class="service-description">Emergency repair for BSOD errors. Prevent data corruption.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Error diagnosis</li>
+                        <li><i class="fas fa-check"></i> Driver fixes</li>
+                        <li><i class="fas fa-check"></i> System stability</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Bluescreen Fix', 150, 'BSOD repair')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(7)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 8 - Modern Card -->
+                <div class="modern-service-card" data-category="software">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$100</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Network & Device Fix</h3>
+                    <p class="service-description">Complete connectivity solutions for all your devices.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Wi-Fi troubleshooting</li>
+                        <li><i class="fas fa-check"></i> Bluetooth pairing</li>
+                        <li><i class="fas fa-check"></i> Driver installation</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Network & Device Fix', 100, 'Wi-Fi, Bluetooth, Sound, Graphics')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(8)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 9 - CV Design -->
+                <div class="modern-service-card cv-service" data-category="cv">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="service-badge">
+                            <span class="badge-popular">Best Value</span>
+                            <div class="price">N$100</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Professional CV Design</h3>
+                    <p class="service-description">ATS-friendly CVs tailored to your industry. Get noticed by employers.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> ATS optimization</li>
+                        <li><i class="fas fa-check"></i> Modern templates</li>
+                        <li><i class="fas fa-check"></i> 3 revisions included</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Professional CV Design', 100, 'ATS-friendly with 3 revisions')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(9)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 10 - Cover Letter -->
+                <div class="modern-service-card cv-service" data-category="cv">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$50</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">Cover Letter Writing</h3>
+                    <p class="service-description">Professional cover letters that complement your CV perfectly.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Job-specific tailoring</li>
+                        <li><i class="fas fa-check"></i> Professional tone</li>
+                        <li><i class="fas fa-check"></i> Keyword optimization</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('Cover Letter Writing', 50, 'Professional cover letter')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(10)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 11 - CV Revamping -->
+                <div class="modern-service-card cv-service" data-category="cv">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="service-badge">
+                            <div class="price">N$80</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">CV Revamping</h3>
+                    <p class="service-description">Update and optimize your existing CV for modern job markets.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Modern redesign</li>
+                        <li><i class="fas fa-check"></i> Content optimization</li>
+                        <li><i class="fas fa-check"></i> ATS compliance check</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('CV Revamping', 80, 'Update and optimize existing CV')">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn-modern-details" onclick="showServiceDetails(11)">
+                            <i class="fas fa-info-circle"></i> Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Delivery Service -->
+                <div class="modern-service-card delivery-service" data-category="delivery">
+                    <div class="card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="service-badge">
+                            <span class="badge-popular">Convenient</span>
+                            <div class="price">N$30</div>
+                        </div>
+                    </div>
+                    <h3 class="service-title">On-Site Delivery</h3>
+                    <p class="service-description">We come to you! Campus, office, or home service across Windhoek.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Any location in Windhoek</li>
+                        <li><i class="fas fa-check"></i> Flexible timing</li>
+                        <li><i class="fas fa-check"></i> Safe & professional</li>
+                    </ul>
+                    <div class="card-footer">
+                        <button class="btn-modern-cart" 
+                                onclick="addToCart('On-Site Delivery', 30, 'Delivery to your location')">
+                            <i class="fas fa-cart-plus"></i> Add Delivery
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details Modal -->
+    <div class="service-modal" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeServiceModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="modern-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your PC or CV?</h2>
+                <p>Professional service at student-friendly prices. Book now or add services to cart.</p>
+                <div class="cta-buttons">
+                    <button class="cta-btn primary" onclick="showCart()">
+                        <i class="fas fa-shopping-cart"></i> View Cart
+                    </button>
+                    <a href="booking.html" class="cta-btn secondary">
+                        <i class="fas fa-calendar-check"></i> Book Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/264814548168?text=Hi%20CampusTech%20Solutions!%20I%20have%20questions%20about%20your%20services..." 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Service Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cartTotal">N$0</span></p>
+            <button class="btn-checkout" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>CampusTech Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> UNAM Main Campus, Windhoek</p>
+                    <p><i class="fas fa-phone"></i> +264 81 454 8168</p>
+                    <p><i class="fas fa-envelope"></i> namwandisakeus04@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CampusTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services.js"></script>
+</body>
+</html>

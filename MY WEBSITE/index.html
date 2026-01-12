@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusTech Solutions - PC Software Repair & CV Design</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CampusTech<span>Solutions</span></h1>
+                <p class="tagline">PC Software Repair • Professional CV Design</p>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a></li>
+                    <li><a href="contact.html"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Expert PC Software Repair & Professional CV Design</h2>
+                <p class="hero-subtitle">Serving Students & All Individuals in Needs • On-Site Service Available</p>    
+    </section>        
+    
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-medical"></i>
+                    </div>
+                    <h3>PC Software Repair</h3>
+                    <p>8 specialized services from N$100</p>
+                    <a href="services.html#software" class="btn-card">View Software Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>CV Design & Revamping</h3>
+                    <p>ATS-friendly, professional designs</p>
+                    <a href="services.html#cv" class="btn-card">View CV Services</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>On-Site Service</h3>
+                    <p>We come to you! Campus, office, or home</p>
+                    <a href="contact.html" class="btn-card">How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/264814548168?text=Hi%20CampusTech%20Solutions!%20I%20need%20help%20with..." 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Service Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will appear here -->
+            <p class="empty-cart">Your cart is empty</p>
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cartTotal">N$0</span></p>
+            <button class="btn-checkout" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Send via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>CampusTech Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> UNAM Main Campus, Windhoek</p>
+                    <p><i class="fas fa-phone"></i> +264 81 454 8168</p>
+                    <p><i class="fas fa-envelope"></i> namwandisakeus04@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="services.html">Services</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CampusTech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/menu.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

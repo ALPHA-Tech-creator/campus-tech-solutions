@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CampusTech Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>CampusTech<span>Solutions</span></h1>
+                <p class="tagline">PC Software Repair • Professional CV Design</p>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="services.html"><i class="fas fa-laptop-code"></i> Services</a></li>
+                    <li><a href="booking.html"><i class="fas fa-calendar-check"></i> Booking</a></li>
+                    <li><a href="contact.html" class="active"><i class="fas fa-map-marker-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-intro">
+                <h1>Get In Touch</h1>
+                <p class="subtitle">We're here to help with all your PC software and CV needs. Reach out anytime!</p>  
+            </section>
+
+    <!-- Contact Methods -->
+    <section class="contact-methods">
+        <div class="container">
+            <h2 class="section-title">Contact Options</h2>
+            <p class="section-subtitle">Choose your preferred way to reach us</p>
+            
+            <div class="methods-grid">
+                <div class="method-card">
+                    <div class="method-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p class="method-desc">Fastest response for service inquiries and bookings</p>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <span>+264 81 454 8168</span>
+                    </div>
+                    <a href="https://wa.me/264814548168" class="btn-contact" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message Now
+                    </a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p class="method-desc">For detailed inquiries and document submissions</p>
+                    <div class="contact-detail">
+                        <i class="fas fa-at"></i>
+                        <span>namwandisakeus04@gmail.com</span>
+                    </div>
+                    <a href="mailto:namwandisakeus04@gmail.com?subject=CampusTech%20Solutions%20Inquiry" class="btn-contact">
+                        <i class="fas fa-paper-plane"></i> Send Email
+                    </a>
+                </div>
+                
+                <div class="method-card">
+                    <div class="method-icon location">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p class="method-desc">Face-to-face consultations at UNAM Main Campus</p>
+                    <div class="contact-detail">
+                        <i class="fas fa-university"></i>
+                        <span>UNAM Main Campus, Windhoek</span>
+                    </div>
+                    <button class="btn-contact" onclick="showMapDirections()">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Hours -->
+    <section class="location-hours">
+        <div class="container">
+            <div class="location-container">
+                <div class="location-info">
+                    <h2><i class="fas fa-university"></i> Our Location</h2>
+                    <div class="address-card">
+                        <h3>CampusTech Solutions</h3>
+                        <div class="address-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p><strong>UNAM Main Campus</strong></p>
+                                <p>Windhoek, Namibia</p>
+                                <p class="note">Specific meeting point provided upon booking</p>
+                            </div>
+                        </div>
+                        
+                        <div class="location-features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Safe campus environment</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-wifi"></i>
+                                <span>Free Wi-Fi available</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-parking"></i>
+                                <span>Visitor parking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hours-info">
+                    <h2><i class="fas fa-clock"></i> Service Hours</h2>
+                    <div class="hours-card">
+                        <div class="hours-day">
+                            <span>Monday - Friday</span>
+                            <span>8:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="hours-day">
+                            <span>Saturday</span>
+                            <span>9:00 AM - 4:00 PM</span>
+                        </div>
+                        <div class="hours-day">
+                            <span>Sunday</span>
+                            <span>10:00 AM - 2:00 PM</span>
+                        </div>
+                        
+                        <div class="emergency-notice">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p><strong>Emergency services available</strong> outside normal hours for urgent PC issues</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How quickly do you respond to service requests?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We typically respond within <strong>10 minutes</strong> during business hours (8AM-6PM). For WhatsApp messages, response is often within minutes. Emergency requests get immediate attention.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What areas in Windhoek do you serve for on-site service?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We serve all areas in Windhoek for on-site service. The N$30 delivery fee applies to any location within Windhoek, including:</p>
+                        <ul>
+                            <li>All campuses and student residences</li>
+                            <li>Office buildings in town and industrial areas</li>
+                            <li>Residential areas (Katutura, Khomasdal, Klein Windhoek, etc.)</li>
+                            <li>Schools and other institutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do payments work?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer flexible payment options:</p>
+                        <ul>
+                            <li><strong>Cash payment</strong> upon service completion</li>
+                            <li><strong>EFT/Bank transfer</strong> (details provided upon booking)</li>
+                            <li>Payment is only required <strong>after service completion</strong> and you're satisfied</li>
+                            <li>No upfront deposits required for standard services</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What information do you need for CV services?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>For CV design or revamping, we need:</p>
+                        <ul>
+                            <li>Your current CV (if you have one)</li>
+                            <li>Educational background and qualifications</li>
+                            <li>Work experience details</li>
+                            <li>Skills and certifications</li>
+                            <li>Target industry/job type</li>
+                            <li>Any specific requirements or preferences</li>
+                        </ul>
+                        <p>We keep all your information confidential and secure.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you offer student discounts?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer special rates for UNAM and other students:</p>
+                        <ul>
+                            <li>10% discount on all services for registered students</li>
+                            <li>Group discounts for multiple students booking together</li>
+                            <li>Free basic consultation for student projects</li>
+                            <li>Student ID verification required for discounts</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What if I'm not satisfied with the service?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Customer satisfaction is our priority:</p>
+                        <ul>
+                            <li>CV services include <strong>3 rounds of free revisions</strong></li>
+                            <li>Software repair comes with a <strong>7-day follow-up support</strong></li>
+                            <li>If the issue reoccurs within 7 days, we fix it for free</li>
+                            <li>Full refund if we cannot resolve your software issue</li>
+                            <li>Money-back guarantee on CV services if not satisfied</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Form -->
+    <section class="quick-contact">
+        <div class="container">
+            <div class="quick-contact-card">
+                <div class="quick-contact-info">
+                    <h2>Quick Question?</h2>
+                    <p>Send us a quick message and we'll get back to you ASAP.</p>
+                    <div class="contact-numbers">
+                        <a href="tel:+264814548168" class="phone-link">
+                            <i class="fas fa-phone"></i> +264 81 454 8168
+                        </a>
+                        <a href="https://wa.me/264814548168" class="whatsapp-link" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="quick-form" id="quickForm">
+                    <div class="form-group">
+                        <input type="text" id="quickName" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="quickPhone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="quickMessage" rows="3" placeholder="Your question or service needed..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-quick-submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/264814548168?text=Hi%20CampusTech%20Solutions!%20I%20have%20a%20question..." 
+       class="whatsapp-float" 
+       target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>CampusTech Solutions</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> UNAM Main Campus, Windhoek</p>
+                    <p><i class="fas fa-phone"></i> +264 81 454 8168</p>
+                    <p><i class="fas fa-envelope"></i> namwandisakeus04@gmail.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="booking.html">Booking</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://wa.me/264814548168" class="social-icon whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:namwandisakeus04@gmail.com" class="social-icon email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+264814548168" class="social-icon phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CampusTech Solutions. All rights reserved. | Serving UNAM & Windhoek</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/menu.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
